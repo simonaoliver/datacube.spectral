@@ -1,0 +1,27 @@
+﻿Band,Name,GSD,Center,FWHM,Rationale
+1,Violet,60,412,20,Improved aerosol retrieval CDOM from inland/coastal water 
+2,Coastal/Aerosol,20,443,20,Landsat heritage  
+3,Blue,10,490,65,Landsat heritage  
+4,Green,10,560,35,Landsat heritage  
+5,Yellow,20,600,30,Leaf chlorosis vegetation stress and mapping 
+6,Orange,20,620,20,Phycocyanin detection for Harmful Algal Blooms 
+7,Red 1,20,650,20,Phycocyanin chlorophyll  
+8,Red 2,10,665,30,Landsat heritage  
+9,Red Edge 1,20,705,15,LAI Chlorophyll plant stress (Sentintel-2) 
+10,Red Edge 2,20,740,15,LAI Chlorophyll plant stress (Sentintel-2) 
+11,NIR Broad,10,842,115,10m NDVI (Sentintel-2) Landsat 8 and Landsat 9)
+12,NIR 1,20,865,20,Landsat heritage continuity (note Sentinel-2 narrower than Surface Reflectance (Sentinel-2)
+13,Water Vapor,60,945,20,Improved atmospheric correction for Land Surface Temperature 
+14,Liquid Water,20,985,20,Liquid water water surface state  
+15,Snow/Ice 1,20,1035,20,Snow grain size for water resources  
+16,Snow/Ice 2,20,1090,20,Ice absorption snow grain size  
+17,Cirrus,60,1375,30,Landsat heritage  
+18,SWIR 1,10,1610,90,Landsat heritage
+19,SWIR 2a,20,2038,25,Subdivided for cellulose crop residue measurement (Landsat heritage)
+18,SWIR 2b,20,2108,40,Subdivided for cellulose crop residue measurement (Landsat heritage)
+21,SWIR 2c,20,2211,40,Subdivided for cellulose crop residue measurement (ASTER)
+22,TIR 1,60,8300,250,Mineral and surface composition mapping 
+23,TIR 2,60,8600,350,Emissivity separation volcanoes (ASTER)
+24,TIR 3,60,9100,350,Mineral and surface composition mapping carbonates
+25,TIR 4,60,11300,550,Surface temperature (Landsat heritage) (Landsat heritage)
+26,TIR 5,60,12000,550,Surface temperature snow grain size  
