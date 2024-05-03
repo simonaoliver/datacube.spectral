@@ -1,4 +1,5 @@
-The Datacube Spectral presents an approach to statistical determination of equivalence of optical satellite sensor spectral bands.
+Datacube Spectral presents an approach to statistical determination of equivalence of optical satellite sensor spectral bands. 
+Originall designed to run direction on OpenDataCube, the approach is represented here as an independent library that could be adapted to run as a band selection tool for OpenDataCube.
 
 Determining_Equivalence_Relative_Spectral_Response.ipynb provides tools to enable the import and synthesis of relative spectral responses
 for many of the well known commercial and government satellite sensors.
@@ -10,9 +11,12 @@ Synthetic bands - presents an approach to the generation of synthetic spectral r
 Hyperspectral - presents routines for import and visualisation of hyperspectral sensors
 Reference colours - overviews an approach to creation of a synthetic spectral response for common base colours. These can then be used to determine equivalent sensor bands.
 Band equivalence - demonstrates an approach to statistical determination of spectral equivalence between one or many sensors. Widgets enable the equivalence metrics to be modified to suit user needs.
+![alt text](https://github.com/simonaoliver/datacube.spectral/master/equivalence.png?raw=true)
 Spectral libraries - provides access to common spectral libraries and allows their visual comparison with sensor spectral bands through interactive widgets.
+![alt text](https://github.com/simonaoliver/datacube.spectral/master/spectral_library.png?raw=true)
 NASA sensor plot emulation - emulates the well known NASA Landsat and Sentinel-2 plots. Controls are provided that allow the user to customise the plots.
-
+![alt text](https://github.com/simonaoliver/datacube.spectral/master/future_optical.png?raw=true)
+![alt text](https://github.com/simonaoliver/datacube.spectral/master/future_hyperspectral.png?raw=true)
 /data - contains the source data for the creation of the sensor spectral responses in the routines outlined above
 /imagery - contains routines for visuaisation of a well known set of hyperspectral missions
 
