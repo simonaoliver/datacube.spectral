@@ -18,7 +18,7 @@ for many of the well known commercial and government satellite sensors.
 ![NASA sensor plot multispectral sensors example](https://github.com/simonaoliver/datacube.spectral/blob/master/future_optical.png)
 ![NASA sensor plot hyperspectral sensors example](https://github.com/simonaoliver/datacube.spectral/blob/master/future_hyperspectral.png)
 **/data** - contains the source data for the creation of the sensor spectral responses in the routines outlined above
-**/imagery** - contains routines for visuaisation of a well known set of hyperspectral missions
+**/imagery** - contains routines for visualisation of a well known set of hyperspectral missions
 
 **sensor_plot_spec.json** - documents configuration of the plot displays for the NASA sensor plot emulation. These can be modified to adjust labels and enable position of plot annotations.
 
