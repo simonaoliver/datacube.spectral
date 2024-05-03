@@ -11,12 +11,12 @@ for many of the well known commercial and government satellite sensors.
 **Hyperspectral** - presents routines for import and visualisation of hyperspectral sensors
 **Reference colours** - overviews an approach to creation of a synthetic spectral response for common base colours. These can then be used to determine equivalent sensor bands.
 **Band equivalence** - demonstrates an approach to statistical determination of spectral equivalence between one or many sensors. Widgets enable the equivalence metrics to be modified to suit user needs.
-![Band equivalence](https://github.com/simonaoliver/datacube.spectral/equivalence.png)
+![Band equivalence](https://github.com/simonaoliver/datacube.spectral/blob/master/equivalence.png)
 **Spectral libraries** - provides access to common spectral libraries and allows their visual comparison with sensor spectral bands through interactive widgets.
-![Spectral libraries](https://github.com/simonaoliver/datacube.spectral/spectral_library.png)
+![Spectral libraries](https://github.com/simonaoliver/datacube.spectral/blob/master/spectral_library.png)
 **NASA sensor plot emulation** - emulates the well known NASA Landsat and Sentinel-2 plots. Controls are provided that allow the user to customise the plots.
-![NASA sensor plot multispectral sensors example](https://github.com/simonaoliver/datacube.spectral/future_optical.png)
-![NASA sensor plot hyperspectral sensors example](https://github.com/simonaoliver/datacube.spectral/future_hyperspectral.png)
+![NASA sensor plot multispectral sensors example](https://github.com/simonaoliver/datacube.spectral/blob/master/future_optical.png)
+![NASA sensor plot hyperspectral sensors example](https://github.com/simonaoliver/datacube.spectral/blob/master/future_hyperspectral.png)
 **/data** - contains the source data for the creation of the sensor spectral responses in the routines outlined above
 **/imagery** - contains routines for visuaisation of a well known set of hyperspectral missions
 
