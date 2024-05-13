@@ -650,11 +650,11 @@ def hor_gradient_image(ax, extent, darkest, **kwargs):
     img = np.interp(np.linspace(0, 1, 100), [0, darkest, 1], [0, 1, 0]).reshape(1, -1)
     return ax.imshow(img, extent=extent, interpolation='bilinear', vmin=0, vmax=1, **kwargs)
 
-def gradient_hbar(sensor_print_dict, sensor, band, y, x0, x1, color, ax, height=0.05, darkest=1,cmap=None):
+def gradient_hbar(sensor_print_dict, sensor, band, y, x0, x1, color, ax, lw, height=0.05,  darkest=1, cmap=None):
     
     hor_gradient_image(ax, extent=(x0, x1, (y - (height / 2))+height, (y + (height / 2))+height), cmap=cmap, darkest=darkest)
     
-    rect = mpatches.Rectangle((x0, (y - (height / 2))+height), x1 - x0, height, edgecolor='black', facecolor='none', lw=0.5)
+    rect = mpatches.Rectangle((x0, (y - (height / 2))+height), x1 - x0, height, edgecolor='black', facecolor='none', lw=lw)
     ax.add_patch(rect)
     
     # Add white band number to bar
@@ -720,7 +720,7 @@ def getcentrewavelength(sensordict, sensor, band):
     return int(np.average(sensor1wl, weights=sensor1rsr))
   
 
-def plothorizontalallbands(sensordict, sensorlist, xlimmin, xlimmax, plotticklist, xlimmin2, xlimmax2, plotticklist2, sensor_print_dict, title, heightW, figureWidth, figureHeight , colourlut):
+def plothorizontalallbands(sensordict, sensorlist, xlimmin, xlimmax, plotticklist, xlimmin2, xlimmax2, plotticklist2, sensor_print_dict, title, heightW, figureWidth, figureHeight , colourlut, lw):
 # https://landsat.gsfc.nasa.gov/article/the-intervening-atmosphere-tracing-the-provenance-of-a-favorite-landsat-infographic
 # Adapted from https://stackoverflow.com/questions/63843796/advanced-horizontal-bar-chart-with-python
     
@@ -730,6 +730,7 @@ def plothorizontalallbands(sensordict, sensorlist, xlimmin, xlimmax, plotticklis
     xlimmax2 = int(xlimmax2)
     plotticklist = [int(str) for str in plotticklist]
     plotticklist2 = [int(str2) for str2 in plotticklist2.split(',')]
+    lw = float(lw)
     
     f, (ax, ax2) = pyplot.subplots(1,2, sharex=False, sharey=False, figsize=(int(figureWidth), int(figureHeight)))
       
@@ -798,10 +799,10 @@ def plothorizontalallbands(sensordict, sensorlist, xlimmin, xlimmax, plotticklis
             
             # In order to not duplicate plot labels at different scales, add them selectively depending on the bounds of each subplot
             if x1 < xlimmax:
-                gradient_hbar(sensor_print_dict, sensor, band, y2, x0, x1, hexcolour, ax, height=height2, darkest=0.5, cmap=cmap)
+                gradient_hbar(sensor_print_dict, sensor, band, y2, x0, x1, hexcolour, ax, lw, height=height2, darkest=0.5, cmap=cmap)
     
             else:
-                gradient_hbar(sensor_print_dict, sensor, band, y2, x0, x1, hexcolour, ax2, height=height2, darkest=0.5, cmap=cmap)
+                gradient_hbar(sensor_print_dict, sensor, band, y2, x0, x1, hexcolour, ax2, lw, height=height2, darkest=0.5, cmap=cmap)
     
             if (x1 > xmax) and (x1 < xlimmax2):
                 xmax=x1
