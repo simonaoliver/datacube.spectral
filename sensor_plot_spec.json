@@ -11312,7 +11312,7 @@
         "terminated": 0,
         "title": "SBG VSWIR"
     },
-    "synth_sentinel2ng": {
+    "synth_sentinel2ng_2022": {
         "bands": {
             "0": {
                 "label": 0,
@@ -11437,11 +11437,127 @@
         },
         "class": "MSI",
         "launched": 2035,
-        "satellite": "Sentinel-2NG",
+        "satellite": "Sentinel-2NG 2022",
         "sensor": "AMSI",
-        "shortname": "Sentinel-2NG AMSI",
+        "shortname": "Sentinel-2NG AMSI 2022",
         "terminated": 0,
-        "title": "Sentinel-2 NG AMSI"
+        "title": "Sentinel-2 NG AMSI 2022"
+    },
+    "synth_sentinel2ng_2024": {
+        "bands": {
+            "0": {
+                "label": 0,
+                "labeltop": true,
+                "resolution": 20
+            },
+            "1(H)": {
+                "label": "1H",
+                "labeltop": true,
+                "resolution": 20
+            },
+            "1a": {
+                "label": "1a",
+                "labeltop": true,
+                "resolution": 20
+            },
+            "2(H)": {
+                "label": "2H",
+                "labeltop": true,
+                "resolution": 5
+            },
+            "2a": {
+                "label": "2a",
+                "labeltop": true,
+                "resolution": 10
+            },
+            "3(H)": {
+                "label": "3H",
+                "labeltop": true,
+                "resolution": 5
+            },
+            "3a": {
+                "label": "3a",
+                "labeltop": true,
+                "resolution": 20
+            },
+            "3b": {
+                "label": "3b",
+                "labeltop": true,
+                "resolution": 20
+            },
+            "4(H)": {
+                "label": "4H",
+                "labeltop": true,
+                "resolution": 5
+            },
+            "5(H)": {
+                "label": "5H",
+                "labeltop": true,
+                "resolution": 10
+            },
+            "6(H)": {
+                "label": "6H",
+                "labeltop": true,
+                "resolution": 10
+            },
+            "7(H)": {
+                "label": "2a",
+                "labeltop": true,
+                "resolution": 10
+            },
+            "8(H)": {
+                "label": "8H",
+                "labeltop": false,
+                "resolution": 5
+            },
+            "8a(H)": {
+                "label": "8aH",
+                "labeltop": true,
+                "resolution": 10
+            },
+            "9(H)": {
+                "label": "9H",
+                "labeltop": true,
+                "resolution": 60
+            },
+            "9a": {
+                "label": "9a",
+                "labeltop": true,
+                "resolution": 60
+            },
+            "10(H)": {
+                "label": "10H",
+                "labeltop": true,
+                "resolution": 60
+            },
+            "11(H)": {
+                "label": "11H",
+                "labeltop": false,
+                "resolution": 10
+            },
+            "12a": {
+                "label": "12a",
+                "labeltop": true,
+                "resolution": 10
+            },
+            "12b": {
+                "label": "12b",
+                "labeltop": true,
+                "resolution": 10
+            },
+            "12c": {
+                "label": "12c",
+                "labeltop": true,
+                "resolution": 10
+            }
+        },
+        "class": "MSI",
+        "launched": 2035,
+        "satellite": "Sentinel-2NG 2024",
+        "sensor": "AMSI",
+        "shortname": "Sentinel-2NG AMSI 2024",
+        "terminated": 0,
+        "title": "Sentinel-2 NG AMSI VHRODA 2024"
     },
     "synth_trishna": {
         "bands": {
